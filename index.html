@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+      <meta name="keywords" content="site web, site internet, agence design">
+      <meta name="description" content="site web, site internet, agence design">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+
+       <link rel="icon" href="favicon.png" />
+     
+        <title>La Chouette Agence</title><!-- ajout BME-->
+     
+        
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" /><!-- ajout BME-->
+    
+        	<link rel="stylesheet" type="text/css" href="css/et-line.css"><!--"./" ?????? -->
+        	<link rel="stylesheet" type="text/css" href="p4.css">
+     
+<style>
+
+</style>
+ <script>
+ var vmax=3;
+  var indexP=-1;
+  var vactif=0;
+ 
+
+
+
+
+ var vlegende=["Refonte d'un site web pour un journal local",
+ "Création d'un site pour photographies",
+ "Création d'un site internet pour un voyageur",
+ "Conception d'un site pour une agence de mariage"];
+
+ var vsrc=["images/realisation_1.jpg","images/realisation_2.jpg","images/realisation_3.jpg","images/realisation_4.jpg"];
+
+ function diapo(oui){
+ //essayer toogle.....
+   if (oui==1){
+    document.getElementById("zoomer").style.display="inline";vactif=1;
+      }
+   else {document.getElementById("zoomer").style.display="none";vactif=0}
+ } 
+ function avance(num){
+ 
+  truc=indexP+(num*1);
+  showPhoto(truc);
+  event.stopPropagation(); 
+  event.stopPropagation();
+
+ }
+
+   function showPhoto(truc){
+     vtt="";
+     indexP=truc;
+
+    vtt += ' <div id ="bloquer" onclick=" diapo(0)"><div id ="imag_zomm"><img src="'+vsrc[truc]+'" alt="'+vlegende[truc]+'">';
+    vtt += '<div id ="legende_zomm">'+vlegende[truc]+'</div>';
+    vtt += ' <div id="bton_close" onclick=" diapo(0)" >X</div>';
+    if(indexP>0){ vtt += '<div id="bton_moins" onclick=" avance(-1)"><</div>';}
+    if(indexP<vmax){ vtt += '<div id="bton_plus" onclick=" avance(1)">></div></div></div>';}
+    document.getElementById("zoomer").innerHTML=vtt;
+
+    
+  
+ 
+  //<div id="bton_plus" onclick=" avance(1)">></div>
+  //<div id="bton_moins" onclick=" avance(-1)"">--</div> ';
+
+
+    diapo(1);
+   }
+    
+   
+   
+ </script>
+
+</head>
+    
+    <body>
+     
+     
+      <header>
+      
+           <img src="images/la-chouette-agence.png" alt="paris web design logo agence web meilleure agence" height="40" /></a>
+            <!-- Navigation Bar  -->
+            <nav>
+            <a href="#">Accueil</a>
+            <a href="contact.html">Contact</a>
+            
+            </nav>
+            
+           
+        </header>
+       <main>
+        <section id="bloc-1" class="imagefond1">
+          <img src="images/logo.png" class="" width="100" alt="La chouette agence, agence web paris, création logo paris" />
+          <h1 class="text-center hero-bloc-text tc-white ">
+					La chouette agence.
+				</h1>
+				<a href="contact.html"  class="nous_contacter">Contact</a>
+        </section>
+
+         <h2>La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur Internet</h2>
+    <section id="bloc-2">
+      
+     
+            
+      <article class="nos_realisations">
+        	<span class="et-icon-browser icon_dim"></span>
+        <h3>Web design</h3>
+        <p>Que vous ayez un site web qui a besoin d’un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</p>
+      </article><!--fin article-->
+            
+      <article class="nos_realisations">
+        <span class="et-icon-presentation icon_dim"></span>
+        <h3>Stratégie</h3>
+        <p>Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible</p>
+      </article><!--fin article-->
+      <article class="nos_realisations">
+        <span class="et-icon-edit icon_dim"></span>
+        
+        <h3>illustration</h3>
+        <p>Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.</p>
+      </article><!--fin article-->
+      
+         
+</section>
+ <h4><cite>" La chouette agence est une exellente agence web ! Les web designers ont reussi à capturé l 'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon. "
+
+.</cite></h4><h5>— Maxime Guibard, PDG de "A vos fourchettes "</h5>
+
+  <section id="bloc-3-what-i-do"  class="imagefond2">
+    <div class="ombre">titi</div>
+    <article class="promos">
+      <h3>Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients.</h3>
+    <p>Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.</p>
+    <p>	<a href="contact.html">Contactez notre équipe</a></p>
+    	</article>
+    	
+  </section><!-- fin  -->
+   <h3>Nous travaillons avec beaucoup de clients, voici nos réalisations :</h3>
+
+   <div id="zoomer">
+  <div id ="imag_zomm"><img src="images/la-chouette-agence.png" alt=""></div>
+  <div id ="legende_zomm">legende</div>
+  <div id="bton_close" onclick=" diapo(0)" >X</div>
+  <div id="bton_plus" onclick=" avance(1)">></div>
+  <div id="bton_moins" onclick=" avance(-1)"">--</div>
+</div>
+
+  <section class="nos_prestations">
+   <article>
+     <div  class="cadrephoto" onclick="showPhoto(0)"><img src="images/realisation_1.jpg" class=""  alt="La chouette agence: un site web pour un journal local" /></div>
+       <div class="monfocus">+</div>
+      <h4>refonte d'un site web pour un journal local</h4>
+      <p>Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
+    
+    </article>
+    <article>
+       <div  class="cadrephoto" onclick="showPhoto(1)"><img src="images/realisation_2.jpg" class=""  alt="La chouette agence : Création d'un site pour photographies" /></div>
+       <div class="monfocus" >+</div>
+      <h4>Création d'un site pour photographies</h4>
+      <p>Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes</p>
+       
+    </article>
+    <article>
+       <div  class="cadrephoto" onclick="showPhoto(2)"><img src="images/realisation_3.jpg" class=""  alt="La chouette agence : site internet pour un voyageur" /></div>
+       <div class="monfocus">+</div>
+      <h4>Création d'un site internet pour un voyageur</h4>
+      <p>Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
+      
+    </article>
+    <article>
+       <div  class="cadrephoto" onclick="showPhoto(3)"><img src="images/realisation_4.jpg" class=""  alt="La chouette agence : site pour une agence de mariage" /></div>
+       <div class="monfocus" ">+</div>
+      <h4>Conception d'un site pour une agence de mariage</h4>
+      <p>Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.</p>
+    
+    </article>
+   
+  
+  </section>
+<section>
+ 
+</section>
+  
+<section class="imagefond1">
+  <h4>Prêt pour redonner vie à votre projet ?</h4>
+  	<a href="contact.html"  class="nous_contacter">Contact</a>
+</section>
+
+
+ 
+ 
+  
+</main><!--fin main"-->
+
+
+
+
+
+        <!-- Footer -->
+        <footer>
+          <p>La chouette agence - Agence web basée à Lyon.</p>
+          
+          <a class="social" href="index.html"><i class="fab fa-twitter icon_md"></i></a>
+          <a class="social" href="index.html"><i class="fab fa-facebook-f icon_md"></i></a>
+          <a class="social" href="index.html"><i class="fab fa-dribbble icon_md"></i></a>
+          <a class="social" href="index.html"><i class="fab fa-instagram icon_md"></i></a>
+
+<!--
+          <i class="fa fa-twitter "></i>
+          <i class="fa fa-facebook "></i>
+
+
+
+          <a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+						
+							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+					
+				
+							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+						
+							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+ -->
+              <div class="flex_footer">
+   <section class="liens">
+						Partenaires
+							<ul>
+								<li><a href="http://www.google.com">google.com</a></li>
+								<li><a href=http://www.w3schools.com">3school.com</a></li>
+								<li><a href="http://www.matoiture.com">matoiture.com</a></li>
+								<li><a href="http://www.immobilierseo.com">immobilierseo.com</a></li>
+							</ul>
+					</section>
+          <section class="liens">
+						Annuaires liste 1
+						<ul>
+							<li><a href="http://www.annuaireagence.com">annuaireagence.com</a></li>
+							<li><a href="http://www.annuaireseo.com">annuaireseo.com</a></li>
+							<li><a href="http://www.annuairemarketing.com">annuairemarketing.com</a></li>
+							<li><a href="http://www.123seoture.com">123seo.com</a></li>
+							<li><a href="http://www.123site.com">123site.com</a></li>
+							<li><a href="http://www.annuairewordpress.com">annuairewordpress.com</a></li>
+							<li><a href="http://www.listeagence.com">listeagence.com</a></li>
+							<li><a href="http://www.meilleuresagencesparis.com">meilleuresagencesparis.com</a></li>
+							<li><a href="http://www.listeseo.com">listeseo.com</a></li>
+						</ul>
+					</section>
+					<section class="liens">
+						Annuaires liste 2
+						<ul>
+							<li><a href="http://www.betterseo.com">betterseo.com</a></li>
+							<li><a href="http://www.ameliorerseo.com">ameliorerseo.com</a></li>
+							<li><a href="http://www.seojuicelien.com">seojuicelien.com</a></li>
+							<li><a href="http://www.meilleursliens.com">meilleursliens.com</a></li>
+							<li><a href="http://www.liensagogo.com">liensagogo.com</a></li>
+							<li><a href="http://www.backlink.com">backlink.com</a></li>
+							<li><a href="http://www.linkjuiceannuaire.com">linkjuiceannuaire.com</a></li>
+							<li><a href="http://www.remontersurgoogle.com">remontersurgoogle.com</a></li>
+							<li><a href="http://www.vraiseofiable.com">vraiseofiable.com</a></li>
+						</ul>
+					</section>
+        </div>
+		</footer>
+ 
+    </body>
+</html>

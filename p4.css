@@ -1,0 +1,379 @@
+/* https://css-tricks.com/ */
+:root {
+  --largeur_max: 945px;
+  --decalage_img: 10%;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+
+  font-family: "Raleway-Regular", "Arial", " Verdana", "sans-serif";
+  /* a changer */
+
+  font-size: 1em;
+
+  /* padding-left: 15px;*/
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+h1 {
+  color: #eebe4c;
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: flex end;
+}
+header img {
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+nav a {
+  font-size: 24px;
+  color: grey;
+  margin-left: 50px;
+}
+nav a:hover {
+  font-size: 24px;
+  color: rgb(172, 25, 25);
+}
+
+#legende_zomm {
+  position: fixed;
+  text-align: center;
+  bottom: 15%;
+  padding: 20px;
+  font-size: 24px;
+}
+
+section {
+  text-align: center;
+}
+
+.nous_contacter {
+  margin-top: 22px;
+  color: black !important;
+  background: #f3976c;
+  border-radius: 22px;
+  text-transform: uppercase;
+  padding: 12px 28px 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#imag_zomm {
+  position: fixed;
+  background-color: ivory;
+  box-shadow: 3px 2px 2px brown;
+  top: var(--decalage_img);
+  left: var(--decalage_img);
+  height: 80%; /*cal(100% - (2 * var(--decalage_img)));*/
+  width: 80%;
+  z-index: 10;
+}
+#imag_zomm img {
+  position: fixed;
+
+  top: 25%;
+  left: 25%;
+}
+#bloquer {
+  position: fixed;
+  background-color: rgb(26, 4, 4);
+  opacity: 0.75;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 8;
+}
+
+#bloc-2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nos_realisations {
+  width: 30%;
+  justify-content: center;
+  min-width: 280px;
+  margin-bottom: 30px;
+}
+
+.nos_realisations p {
+  margin: 0px 20px;
+}
+.imagefond1 {
+  background-image: url("images/la-chouette-agence-banniere.jpg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+.imagefond2 {
+  background-image: url("images/image-de-presentation.jpg");
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.nos_prestations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nos_prestations article {
+  /* width: 42% */
+  position: relative;
+  max-width: 277px;
+}
+
+.nos_prestations p,
+.nos_prestations h4 {
+  margin: 0px 20px;
+}
+.nos_prestations article {
+  margin-bottom: 30px;
+}
+
+#bloc-1 {
+  padding-top: 40px;
+}
+/* 
+#zoomer {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: none;
+  width: 100px;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 9;
+} */
+
+.promos {
+  /*margin: 30px;
+    padding:30px;
+    width: 600px;
+     background:grey;
+    opacity:0.5;
+    z-index:-1; */
+}
+/*selecteur*/
+.promos h3,
+.imagefond1 h4 {
+  opacity: 1;
+  color: #f3976c;
+}
+.promos p {
+  opacity: 1;
+  color: white;
+}
+.ombre {
+  color: black;
+  opacity: 0.9;
+  width: 350px;
+  height: 150px;
+}
+.bt_envoyer:hover {
+  background: #b88e06;
+}
+
+footer {
+  background: #f3976c;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+}
+article h4,
+article h3 {
+  text-transform: uppercase;
+  padding: 12px 28px 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cadrephoto {
+  height: 277px;
+  width: 277px;
+}
+
+.cadrephoto img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.zecontact {
+  color: #f3976c;
+}
+
+.icon_dim {
+  transform: scale(4, 4);
+  color: #7633bf;
+}
+/*.monfocus:hover{cursor:pointer;}*/
+
+.monfocus {
+  display: none;
+  /**/
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  left: 122px;
+  top: 122px;
+  font-size: 1.8rem;
+  padding_top: 8px;
+  color: white;
+}
+.cadrephoto:hover .monfocus,
+.nos_prestations article:hover .monfocus {
+  display: inline-block;
+}
+
+#zoom {
+  /*display: none;*/
+  background-color: #ffffff;
+  border: 1px solid blue;
+  width: 100%;
+  height: 100%;
+}
+#bton_close,
+#bton_plus,
+#bton_moins {
+  background-color: grey;
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 12px;
+  width: 36px;
+  height: 36px;
+  transition: all 0.2s ease-in-out;
+}
+#bton_moins {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+#bton_plus {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+#bton_close {
+  color: #ffffff;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#bton_close:hover,
+#bton_plus:hover,
+#bton_moins:hover {
+  background-color: #17042b;
+  opacity: 1;
+  cursor: pointer;
+}
+.cadrephoto {
+  height: 270px;
+  width: 270px;
+}
+
+.cadrephoto:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.flex_footer {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon_md {
+  margin-left: 30px;
+  font-size: 1.4rem;
+  color: rgb(133, 130, 130);
+}
+
+.icon_md:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.liens .li {
+  text-align: left;
+  margin-left: 20px;
+}
+section .liens {
+  width: 250px;
+}
+
+/* page contact */
+footer {
+  background: #f3976c;
+  padding: 30px 40px;
+  color: white;
+}
+button {
+  background: #f3976c;
+  color: white;
+}
+.texture {
+  background-image: url("images/texture-paper.jpg");
+  width: 100%;
+  height: 100px;
+}
+
+/*pompé via l'inspecteur*/
+.close-lightbox {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  line-height: 30px;
+  padding: 0 9px 5px;
+  opacity: 0.3;
+}
+
+.next-lightbox,
+.prev-lightbox {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  opacity: 0.4;
+}
