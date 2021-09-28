@@ -1,11 +1,15 @@
 # brunoMarquet_p4_2004_2021
 ------------------------
-Projet « restaurant »
+Projet « la chouette agence »
+demande :
+correction du site
+
 livrable :
 index,html
-p3,css
+contact.html
+p4,css
 et dans le folder  pages :
-les 4 pages statiques 
+
 
 En outre sont présents sur le repository :
 - un dossier page dyn ou dynamique (au départ j'avais fait une page dynamique pour le restaurant :
